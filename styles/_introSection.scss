@@ -1,0 +1,47 @@
+
+
+
+.introSection{
+
+    width: 100%;
+    
+
+    @include flex(row, space-around, center);
+
+    h2{
+        font-size: $header2;
+        color: #333;
+        line-height: 1.4em;
+        font-weight: 500;
+
+        span{
+
+            font-size: $header2 ;
+            color: #017143;
+            font-weight: 900;
+        }
+    }
+
+    p{
+        font-size: $text;
+        color: #333;
+    }
+
+    a{
+        display: inline-block;
+        margin-top: 2rem;
+        font-size: $text;
+        padding: 0.8rem 2rem;
+        background: #017143;
+        color: #fff;
+        border-radius: 4rem;
+        font-weight: 500;
+        letter-spacing: 0.1rem;
+    }
+}
+
+
+.introText{
+
+    max-width: 60rem;
+}

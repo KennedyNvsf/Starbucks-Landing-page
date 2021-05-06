@@ -1,0 +1,36 @@
+
+header{
+
+    width: 90%;
+    margin: auto;
+    min-height: 100vh;
+}
+
+nav{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.logoimg{
+
+    
+    max-width: 8rem;
+}
+
+
+.navLinks{
+
+    @include flex (row, space-between, center);
+
+    li{
+        margin-right: 5rem;
+        font-size: $text;
+
+        a{
+            display: inline-block;
+        }
+    }
+}

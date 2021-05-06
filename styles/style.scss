@@ -1,0 +1,27 @@
+
+//Variables
+
+$header1: 2.4rem;
+$header2: 5rem;
+$text: 2rem;
+
+
+//MIXINS
+
+
+@mixin flex ($direction, $justify, $align) {
+    
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+
+
+
+//IMPORTS
+
+@import "global";
+@import "navbar";
+@import "introSection";
