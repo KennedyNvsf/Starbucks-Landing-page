@@ -70,6 +70,7 @@ nav {
 
 .introSection {
   width: 100%;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -116,5 +117,49 @@ nav {
 
 .introText {
   max-width: 60rem;
+}
+
+.introImageBox {
+  width: 60rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding: 5rem;
+  margin-top: 5rem;
+}
+
+.introImageBox img {
+  max-width: 34rem;
+}
+
+.thumb {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  left: 50%;
+  bottom: 2rem;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+}
+
+.thumb li {
+  display: inline-block;
+  cursor: pointer;
+  margin: 0rem 2rem;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.thumb li img {
+  max-width: 6rem;
+}
+
+.thumb li:hover {
+  -webkit-transform: translateY(-1.5rem);
+          transform: translateY(-1.5rem);
 }
 /*# sourceMappingURL=style.css.map */

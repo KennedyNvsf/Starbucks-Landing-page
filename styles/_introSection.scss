@@ -4,6 +4,7 @@
 .introSection{
 
     width: 100%;
+    position: relative;
     
 
     @include flex(row, space-around, center);
@@ -44,4 +45,44 @@
 .introText{
 
     max-width: 60rem;
+}
+
+
+.introImageBox{
+
+    width: 60rem;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5rem;
+    margin-top: 5rem;
+
+    img{
+
+        max-width: 34rem;
+    }
+}
+
+.thumb{
+
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 2rem;
+    transform: translateX(-50%);
+
+    li{
+        display: inline-block;
+        cursor: pointer;
+        margin: 0rem 2rem; 
+        transition: 0.5s;
+
+        img{
+            max-width: 6rem;
+        }
+
+        &:hover{
+
+            transform: translateY(-1.5rem);
+        }
+    }
 }
